@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de games</title>
+    <link rel="stylesheet" href="./scriptform.css">
+</head>
+<body>
+    <div class="container">
+        <form id="cadastro-form">
+            <div class="form-group">
+                <label for="id">ID:</label>
+                <input type="text" id="id" name="id" readonly></input>
+            </div>
+
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Campo obrigatório">
+            </div>
+            <div class="form-group">
+                <label for="imagem">URL da Imagem:</label>
+                <input type="text" id="imagem" name="imagem">
+            </div>
+            <div class="form-group">
+                <label for="desenvolvedor">Desenvolvedor:</label>
+                <input type="text" id="desenvolvedor" name="desenvolvedor"  placeholder="Campo obrigatório">
+            </div>
+           
+            <div class="form-group">
+                <label for="valor">Valor:</label>
+                <input type="text" id="valor" name="valor" pattern="[0-9]+([,\.][0-9]{1,2})?" placeholder="Formato: 99 Campo obrigatório">
+            </div>          
+            <button type="button" onclick="cadastrarJogo()">Cadastrar</button>
+            <br>
+            <button type="buttn" class="buttonSuccess" onclick="mudarPagina()">Ir para loja</button>   
+           
+        </form>
+       
+    </div>
+    <div>
+       
+    </div>
+    <script src="./script.js"></script>
+    </html>
